@@ -10,6 +10,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>Welcome!</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+		document.querySelector('.menu').addEventListener('click', () => {
+			document.querySelector('.mobile-menu').style.left = '0'
+		})
+	</script>
   </head>
 
   <body class="overflow-y-scroll bg-gradient-to-t from-[#dac8ee] to-[#ebe3ed]">
@@ -136,10 +141,6 @@
 
   </body>
 
-  <script>
-		document.querySelector('.menu').addEventListener('click', () => {
-			document.querySelector('.mobile-menu').style.left = '0'
-		})
-	</script>
+  
 
 </html>
