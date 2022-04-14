@@ -1,0 +1,145 @@
+---
+
+---
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="overflow-y-scroll bg-gradient-to-t from-[#dac8ee] to-[#ebe3ed]">
+
+    <div class="body-wrapper flex flex-col  min-h-[calc(100vh-180px)]">
+
+      <nav
+        class=" h-16 items-center py-3 bg-gradient-to-t from-[#ebe3edc5] to-[#d9d2e2] sticky w-full top-0 z-10 backdrop-blur flex justify-center">
+        <div
+          class="px-7 w-full max-w-xl sm:px-0 md:px-7 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-[1425px] flex justify-between items-center">
+          <picture class="hover:cursor-pointer">
+            <source media="(min-width: 768px)" srcset="./logo-new.png">
+            <img src="./logo-small.png" alt="astro logo">
+          </picture>
+          <div class="">
+            <ul class="space-x-8 sm:flex hidden items-center sm:space-x-5 ">
+              <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+                  href="/">Home</a>
+              </li>
+              <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+                  href="/pricing">Pricing</a>
+              </li>
+              <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+                  href="/blog">Blog</a></li>
+              <li><img src="./github2.png" alt="github logo" class="hover:scale-110 cursor-pointer"></li>
+              <li><img src="./discord2.png" alt="discord logo" class="hover:scale-110 cursor-pointer"></li>
+              <li><img src="./twitter2.png" alt="twitter logo" class="hover:scale-110 cursor-pointer"></li>
+            </ul>
+            <img src="./menu.png" alt="menu" class="menu block sm:hidden cursor-pointer">
+          </div>
+        </div>
+      </nav>
+
+      <div class="mobile-menu w-full h-screen fixed transition-all -left-full top-0 z-50 bg-gray-100 p-6">
+				<ul class="list-none relative space-y-8 flex flex-col w-fit">
+					<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block"><a
+							href="/">Home</a>
+					</li>
+					<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block"><a
+							href="/pricing">Pricing</a>
+					</li>
+					<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block"><a
+							href="/blog">Blog</a></li>
+				</ul>
+				<p class="absolute top-4 right-7 text-2xl font-bold hover:text-red-600 cursor-pointer " >X</p>
+			</div>
+
+      <h1 class="text-4xl font-bold py-12 mx-5 lg:text-center lg:text-5xl lg:font-extrabold lg:pt-16 lg:pb-24">Pricing
+      </h1>
+
+      <div class="product-wrapper lg:grid lg:grid-cols-2 lg:max-w-4xl lg:self-center lg:w-full">
+
+        <div class="product border border-gray-400 rounded-md mx-5 mb-8 relative">
+          <img src="./free.png" alt="" class="absolute top-2 right-2" width="55">
+          <div class="product-name p-3 bg-white rounded-t-md border-b border-gray-400  pr-20  lg:h-20">
+            <p class="text-orange-500 text-xl font-semibold">Personal</p>
+            <p class="">For organizing every corner of your life.</p>
+          </div>
+          <div class="product-info bg-[#f9f5f1] p-5 rounded-b-md lg:h-96 lg:flex lg:flex-col lg:justify-evenly">
+            <p class="text-4xl font-bold pb-1 tracking-tight">Free</p>
+            <p class="text-sm text-gray-600 pb-10">for individuals</p>
+            <button
+              class="border border-rose-300 w-full rounded-md py-1 text-rose-500 font-semibold hover:bg-rose-100 mb-5 sm:w-64">Get
+              started</button>
+            <div class="space-y-1 flex-col flex">
+              <span class=""><span
+                  class="text-blue-600 bg-blue-200 rounded-full px-1 border border-blue-600">&check;</span> Unlimited
+                pages & blocks</span>
+              <span class=""><span
+                  class="text-blue-600 bg-blue-200 rounded-full px-1 border border-blue-600">&check;</span> Share with 5
+                guests</span>
+              <span class=""><span
+                  class="text-blue-600 bg-blue-200 rounded-full px-1 border border-blue-600">&check;</span> Sync across
+                devices</span>
+              <span class=""><span
+                  class="text-blue-600 bg-blue-200 rounded-full px-1 border border-blue-600">&check;</span> API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product border border-gray-400 rounded-md mx-5 mb-8 relative">
+          <img src="./badge.png" alt="" class="absolute top-2 right-2" width="55">
+          <div class="product-name p-3 py-4 bg-white rounded-t-md border-b border-gray-400 pr-20  lg:h-20">
+            <p class="text-cyan-500 text-xl font-semibold">Personal Pro</p>
+            <p class="">For organizing every corner of your life.</p>
+          </div>
+          <div class="product-info bg-[#f9f5f1] p-5 rounded-b-md lg:h-96  lg:flex lg:flex-col lg:justify-evenly">
+            <p class="text-4xl font-bold pb-1 tracking-tight">$4</p>
+            <p class="text-sm text-gray-600 pb-2 leading-tight">per month <br> billed annually</p>
+            <p class="text-sm text-gray-600 pb-5 leading-tight"><strong>$5</strong> billed monthly</p>
+            <button
+              class="border border-rose-300 w-full rounded-md py-1 text-rose-500 font-semibold hover:bg-rose-100 mb-5 sm:w-64">Try
+              it free</button>
+            <div class="space-y-1 flex-col flex">
+              <p class="text-lg font-semibold pb-3">Everything in Personal, plus</p>
+              <span class=""><span
+                  class="text-blue-600 bg-blue-200 rounded-full px-1 border border-blue-600">&check;</span> Unlimited
+                file
+                uploads</span>
+              <span class=""><span
+                  class="text-blue-600 bg-blue-200 rounded-full px-1 border border-blue-600">&check;</span> Unlimited
+                guests</span>
+              <span class=""><span
+                  class="text-blue-600 bg-blue-200 rounded-full px-1 border border-blue-600">&check;</span> 30 day
+                version
+                history</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="mt-20 bg-[#ebe3ed] w-full py-4">
+      <nav class="flex justify-center pb-5 space-x-10">
+        <a href="/" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+        <a href="/pricing" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+        <a href="/blog" class="font-medium text-gray-500 hover:text-gray-900">Blog</a>
+      </nav>
+      <p class="text-center text-black">
+        &copy; 2021 Great Tool. All rights reserved.
+      </p>
+    </footer>
+
+  </body>
+
+  <script>
+		document.querySelector('.menu').addEventListener('click', () => {
+			document.querySelector('.mobile-menu').style.left = '0'
+		})
+	</script>
+
+</html>

@@ -1,0 +1,190 @@
+---
+
+---
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Welcome!</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+
+	<body class="overflow-y-auto bg-gradient-to-t from-[#dac8ee] to-[#ebe3ed]">
+
+		<div class="body-wrapper flex flex-col ">
+
+			<nav
+				class="h-16 items-center py-3 bg-gradient-to-t from-[#ebe3edc5] to-[#d9d2e2] sticky w-full top-0 z-10 backdrop-blur flex justify-center">
+				<div
+					class="px-7 w-full max-w-xl sm:px-0 md:px-7 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-[1425px] flex justify-between items-center">
+					<picture class="hover:cursor-pointer">
+						<source media="(min-width: 768px)" srcset="./logo-new.png">
+						<img src="./logo-small.png" alt="astro logo">
+					</picture>
+					<div class="">
+						<ul class="space-x-8 sm:flex hidden items-center sm:space-x-5 ">
+							<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+									href="/">Home</a>
+							</li>
+							<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+									href="/pricing">Pricing</a>
+							</li>
+							<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+									href="/blog">Blog</a></li>
+							<li><img src="./github2.png" alt="github logo" class="hover:scale-110 cursor-pointer"></li>
+							<li><img src="./discord2.png" alt="discord logo" class="hover:scale-110 cursor-pointer"></li>
+							<li><img src="./twitter2.png" alt="twitter logo" class="hover:scale-110 cursor-pointer"></li>
+						</ul>
+						<img src="./menu.png" alt="menu" class="menu block sm:hidden cursor-pointer">
+					</div>
+				</div>
+			</nav>
+
+			<div class="mobile-menu w-full h-screen fixed transition-all -left-full top-0 z-50 bg-gray-100 p-6">
+				<ul class="list-none relative space-y-8 flex flex-col w-fit">
+					<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block"><a
+							href="/">Home</a>
+					</li>
+					<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block"><a
+							href="/pricing">Pricing</a>
+					</li>
+					<li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block"><a
+							href="/blog">Blog</a></li>
+				</ul>
+				<p class="absolute top-4 right-7 text-2xl font-bold hover:text-red-600 cursor-pointer " >X</p>
+			</div>
+
+
+
+			<div class="main-header py-8 px-4 md:px-0 text-center mx-auto md:py-12 lg:py-10 xl:py-12 2xl:pt-24 mb-16">
+				<div class="px-2 max-w-xl md:max-w-3xl  lg:max-w-3xl xl:max-w-[832px] md:px-1 ">
+					<h1
+						class="text-4xl text-transparent bg-clip-text inline-block font-bold bg-gradient-to-t to-[#285ae4] from-[#AF43FF] mb-8 md:text-6xl md:tracking-tight">
+						Build fast websites, faster.
+					</h1>
+					<p class="text-2xl text-zinc-500 font-normal mb-12 md:text-2xl lg:text-3xl md:tracking-wide">Astro is a new
+						king of static site builder for the modern web. Powerful developer experience meets lightweight output.</p>
+					<button
+						class="md:inline-block md:mr-6 block mx-auto mb-6 bg-gradient-to-t to-[#285ae4] from-[#AF43FF] px-12 py-3 rounded-lg text-white font-semibold text-2xl tracking-wide hover:-translate-y-0.5 transition-transform">Read
+						the docs</button>
+					<p
+						class="text-lg font-medium cursor-pointer hover:text-[#af43ff] hover:-translate-x-1 transition-transform w-auto inline-block">
+						Get Started</p>
+				</div>
+			</div>
+
+
+			<div class="company-wrapper px-4">
+				<div
+					class="main-companies shadow-lg shadow-gray-400 w-full flex flex-col rounded-xl py-5 px-4 text-[#514375] mx-auto xl:w-auto bg-[#f3e9fa] sm:max-w-[640px] sm:px-8 sm:py-14 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl">
+					<h2 class="text-2xl font-extrabold pb-14 tracking-tight text-center leading-6">
+						Developers around the world rely on Astro
+					</h2>
+					<ul
+						class="grid justify-center text-center gap-y-4 xs:gap-y-7 xs:grid-cols-2 xs:grid-rows-3 lg:grid-rows-none lg:grid-cols-5">
+						<li class="text-3xl font-bold">Google</li>
+						<li class="text-3xl font-bold">Netlify</li>
+						<li class="text-3xl font-bold">Trivago</li>
+						<li class="text-3xl font-bold">divRiots</li>
+						<li class="text-3xl font-bold xs:col-span-2 lg:col-span-1">Monogram</li>
+					</ul>
+				</div>
+			</div>
+
+			<h3 class="text-4xl font-extrabold text-[#31274a] text-center pt-32 pb-9">Discover the benefits of Astro</h3>
+
+			<div
+				class="benefits-wrapper px-5 text-center sm:grid sm:grid-cols-2 sm:gap-x-2 xl:grid-cols-4 lg:max-w-5xl xl:max-w-7xl xl:text-left mx-auto">
+
+				<div id="speed" class="benefit py-7  pt-16  cursor-pointer ">
+					<a href="#speed">
+						<div class="rounded-lg hover:bg-[#ede8ee] hover:shadow-md hover:shadow-slate-400 p-6">
+							<img src="./start-up.png" alt="" width="75" class="pb-10 mx-auto xl:mx-0">
+							<p class="text-xl font-semibold text-[#31274a] pb-4">More HTML, Less JavaScript</p>
+							<p class="text-lg text-[#31274a] leading-snug">Astro uses a modern server-side templating language that
+								renders directly to HTML & CSS, eliminating heavy JavaScript automatically.</p>
+						</div>
+					</a>
+				</div>
+
+				<div id="hydrate" class="benefit py-7  pt-16  cursor-pointer ">
+					<a href="#hydrate">
+						<div class="rounded-lg hover:bg-[#ede8ee] hover:shadow-md hover:shadow-slate-400 p-6">
+							<img src="./drop.png" alt="" width="75" class="pb-10  mx-auto xl:mx-0">
+							<p class="text-xl font-semibold text-[#31274a] pb-4">Automatic Partial Hydration</p>
+							<p class="text-lg text-[#31274a] leading-snug">Astro is the first site builder to eliminate dead code
+								from your website and only hydrate your essential, interactive UI.</p>
+						</div>
+					</a>
+				</div>
+
+				<div id="build" class="benefit py-7  pt-16  cursor-pointer ">
+					<a href="#build">
+						<div class="rounded-lg hover:bg-[#ede8ee] hover:shadow-md hover:shadow-slate-400 p-6">
+							<img src="./hammer.png" alt="" width="75" class="pb-10 mx-auto xl:mx-0">
+							<p class="text-xl font-semibold text-[#31274a] pb-4">Build, Extend, Deploy</p>
+							<p class="text-lg text-[#31274a] leading-snug">Whatever you're building, Astro has you covered. With
+								convenient, out-of-the-box features and even more ready-to-use integrations.</p>
+						</div>
+					</a>
+				</div>
+
+				<div id="peak" class="benefit py-7  pt-16  cursor-pointer ">
+					<a href="#peak">
+						<div class="rounded-lg hover:bg-[#ede8ee] hover:shadow-md hover:shadow-slate-400 p-6">
+							<img src="./peak.png" alt="" width="75" class="pb-10 mx-auto xl:mx-0">
+							<p class="text-xl font-semibold text-[#31274a] pb-4">Peak Performance</p>
+							<p class="text-lg text-[#31274a] leading-snug">Site performance has a tangible impact on the success of
+								your business. Astro sites can be up to 40% faster and use 90% less JavaScript compared to leading
+								static site generators.</p>
+						</div>
+					</a>
+				</div>
+
+
+
+			</div>
+			<footer class="mt-20 bg-[#ebe3ed] w-full py-4">
+				<nav class="flex justify-center pb-5 space-x-10">
+					<a href="/" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+					<a href="/pricing" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+					<a href="/blog" class="font-medium text-gray-500 hover:text-gray-900">Blog</a>
+				</nav>
+				<p class="text-center text-black">
+					&copy; 2021 Great Tool. All rights reserved.
+				</p>
+			</footer>
+
+		</div>
+
+	</body>
+	<script>
+		document.querySelector('.menu').addEventListener('click', () => {
+			document.querySelector('.mobile-menu').style.left = '0'
+		})
+	</script>
+
+</html>
+
+
+<!-- <div class="grid grid-cols-1 sm:grid-cols-2 sm:w-full gap-5 w-full mx-auto xl:grid-cols-4">
+	<div
+		class="bg-[#f3e9fa] rounded-xl py-20 sm:py-28 text-center shadow-lg shadow-gray-800 md:px-10 cursor-pointer ">
+		<p class="text-2xl font-semibold text-[#31274a] lg:text-3xl">Google</p>
+	</div>
+	<div
+		class="bg-[#f3e9fa] rounded-xl py-20 sm:py-28 text-center shadow-lg shadow-gray-800 md:px-10 cursor-pointer  ">
+		<p class="text-2xl font-semibold text-[#31274a] lg:text-3xl">netlify</p>
+	</div>
+	<div
+		class="bg-[#f3e9fa] rounded-xl py-20 sm:py-28 text-center shadow-lg shadow-gray-800 md:px-10 cursor-pointer ">
+		<p class="text-2xl font-semibold text-[#31274a] lg:text-3xl">trivago</p>
+	</div>
+	<div
+		class="bg-[#f3e9fa] rounded-xl py-20 sm:py-28 text-center shadow-lg shadow-gray-800 md:px-10 cursor-pointer ">
+		<p class="text-2xl font-semibold text-[#31274a] lg:text-3xl">MONOGRAM</p>
+	</div>
+</div> -->

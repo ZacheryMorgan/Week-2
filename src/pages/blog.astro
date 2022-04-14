@@ -1,0 +1,100 @@
+---
+
+---
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="overflow-y-scroll bg-gradient-to-t from-[#dac8ee] to-[#ebe3ed]">
+
+    <div class="body-wrapper flex flex-col  min-h-[calc(100vh-180px)] items-center">
+
+      <nav
+        class=" h-16 items-center py-3 bg-gradient-to-t from-[#ebe3edc5] to-[#d9d2e2] sticky w-full top-0 z-10 backdrop-blur flex justify-center">
+        <div
+          class="px-7 w-full max-w-xl sm:px-0 md:px-7 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-[1425px] flex justify-between items-center">
+          <picture class="hover:cursor-pointer">
+            <source media="(min-width: 768px)" srcset="./logo-new.png">
+            <img src="./logo-small.png" alt="astro logo">
+          </picture>
+          <div class="">
+            <ul class="space-x-8 sm:flex hidden items-center sm:space-x-5 ">
+              <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+                  href="/">Home</a>
+              </li>
+              <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default"><a
+                  href="/pricing">Pricing</a>
+              </li>
+              <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default">Blog</li>
+              <li><img src="./github2.png" alt="github logo" class="hover:scale-110 cursor-pointer"></li>
+              <li><img src="./discord2.png" alt="discord logo" class="hover:scale-110 cursor-pointer"></li>
+              <li><img src="./twitter2.png" alt="twitter logo" class="hover:scale-110 cursor-pointer"></li>
+            </ul>
+            <img src="./menu.png" alt="menu" class="menu block sm:hidden cursor-pointer">
+          </div>
+        </div>
+      </nav>
+
+      <div class="mobile-menu w-full h-screen fixed transition-all -left-full top-0 z-50 bg-gray-100 p-6">
+        <ul class="list-none relative space-y-8 flex flex-col w-fit">
+          <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block">
+            <a href="/">Home</a>
+          </li>
+          <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block">
+            <a href="/pricing">Pricing</a>
+          </li>
+          <li class="text-[#31274a] md:text-2xl text-xl font-semibold hover:text-[#af43ff] cursor-default inline-block">
+            <a href="/blog">Blog</a>
+          </li>
+        </ul>
+        <p class="absolute top-4 right-7 text-2xl font-bold hover:text-red-600 cursor-pointer ">X</p>
+      </div>
+
+      <main class="pt-16 px-10 space-y-6 w-full lg:max-w-4xl">
+
+        <div class="mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <p class="mb-6 text-gray-400 uppercase text-sm">Feb 10 2022</p>
+          <h3 class="text-3xl font-semibold text-gray-900">February big update</h3>
+          <p class="mt-6 text-gray-500">Today we introduced a new big update <a href=""
+              class="text-blue-500 font-semibold hover:text-blue-300">....</a></p>
+        </div>
+
+        <div class="mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <p class="mb-6 text-gray-400 uppercase text-sm">Jan 06 2022</p>
+          <h3 class="text-3xl font-semibold text-gray-900">Some news</h3>
+          <p class="mt-6 text-gray-500">Today we introduced a new big update <a href=""
+              class="text-blue-500 font-semibold hover:text-blue-300">....</a></p>
+        </div>
+
+      </main>
+
+
+    </div>
+
+    <footer class="mt-20 bg-[#ebe3ed] w-full py-4">
+      <nav class="flex justify-center pb-5 space-x-10">
+        <a href="/" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+        <a href="/pricing" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+        <a href="/blog" class="font-medium text-gray-500 hover:text-gray-900">Blog</a>
+      </nav>
+      <p class="text-center text-black">
+        &copy; 2021 Great Tool. All rights reserved.
+      </p>
+    </footer>
+
+  </body>
+
+  <script>
+    document.querySelector('.menu').addEventListener('click', () => {
+      document.querySelector('.mobile-menu').style.left = '0'
+    })
+  </script>
+
+</html>
